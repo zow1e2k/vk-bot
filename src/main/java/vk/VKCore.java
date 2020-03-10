@@ -22,7 +22,7 @@ public class VKCore {
         int groupId = 0;
         String access_token = "your access token";
         actor = new GroupActor(groupId, access_token);
-        ts = vk.messages().getLongPollServer(actor).execute().getTs();
+        ts = getVk().messages().getLongPollServer(actor).execute().getTs();
     }
     public GroupActor getActor() {
         return actor;
@@ -31,7 +31,7 @@ public class VKCore {
         return vk;
     }
     public Message getMessage() throws ClientException, ApiException {
-        MessagesGetLongPollHistoryQuery eventsQuery = vk.messages()
+        MessagesGetLongPollHistoryQuery eventsQuery = getVk().messages()
                 .getLongPollHistory(actor)
                 .ts(ts);
         if (maxMsgId > 0){
@@ -44,7 +44,7 @@ public class VKCore {
 
         if (!messages.isEmpty()){
             try {
-                ts =  vk.messages()
+                ts =  getVk().messages()
                         .getLongPollServer(actor)
                         .execute()
                         .getTs();

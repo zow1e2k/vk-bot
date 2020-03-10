@@ -45,10 +45,8 @@ public abstract class Command {
      */
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof Command){
-            if (name.equals(((Command) obj).name)){
+        if (obj instanceof Command && name.equals(((Command) obj).name)) {
                 return true;
-            }
         }
         return false;
     }

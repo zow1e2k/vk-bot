@@ -1,7 +1,6 @@
 package core;
 
 import com.vk.api.sdk.objects.messages.Message;
-import core.commands.Me;
 import core.commands.Unknown;
 
 import java.util.Collection;
