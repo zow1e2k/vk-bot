@@ -7,8 +7,9 @@ import java.util.Collection;
 
 public class CommandDeterminant {
     public static Command getCommand(Collection<Command> commands, Message message) {
-        String body = message.getBody();
-        String id = message.getUserId().toString();
+        String body = message.getText(); //message.getBody();
+        String id = message.getId().toString(); //message.getUserId().toString();
+
         for (Command command : commands) {
             if (command.name.equals(body))
                 return command;

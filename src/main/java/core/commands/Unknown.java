@@ -10,6 +10,6 @@ public class Unknown extends Command{
     }
     @Override
     public void exec(Message message) {
-        new VKManager().sendButtonMessage("Неизвестная команда", message.getUserId(), Buttons.START.getObj());
+        new VKManager().sendButtonMessage("Неизвестная команда", message.getPeerId(), Buttons.START.getObj());
     }
 }

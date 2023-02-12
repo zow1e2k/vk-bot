@@ -23,7 +23,12 @@ public class VKManager {
             return;
         }
         try {
-            vkCore.getVk().messages().send(vkCore.getActor()).peerId(peerId).message(msg).execute();
+            vkCore.getVk()
+                    .messages()
+                    .send(vkCore.getActor())
+                    .peerId(peerId)
+                    .message(msg)
+                    .execute();
         }
         catch (ApiException | ClientException e) {
             e.printStackTrace();
@@ -36,7 +41,14 @@ public class VKManager {
             return;
         }
         try {
-            vkCore.getVk().messages().send(vkCore.getActor()).peerId(peerId).message(msg).unsafeParam("keyboard", keyboard).execute();
+            vkCore
+                    .getVk()
+                    .messages()
+                    .send(vkCore.getActor())
+                    .peerId(peerId)
+                    .message(msg)
+                    .unsafeParam("keyboard", keyboard)
+                    .execute();
         }
         catch (ApiException | ClientException e) {
             e.printStackTrace();
@@ -49,7 +61,13 @@ public class VKManager {
             return;
         }
         try {
-            vkCore.getVk().messages().send(vkCore.getActor()).peerId(Admins.Admin.getId()).message(msg).execute();
+            vkCore
+                    .getVk()
+                    .messages()
+                    .send(vkCore.getActor())
+                    .peerId(Admins.Admin.getId())
+                    .message(msg)
+                    .execute();
         }
         catch (ApiException | ClientException e) {
             e.printStackTrace();
@@ -85,7 +103,7 @@ public class VKManager {
      * @return {@link UserXtrCounters} информацию о пользователе
      * @see UserXtrCounters
      */
-    public static UserXtrCounters getUserInfo(int id){
+    /*public static UserXtrCounters getUserInfo(int id){
         try {
             return vkCore.getVk().users()
                     .get(vkCore.getActor())
@@ -96,5 +114,5 @@ public class VKManager {
             e.printStackTrace();
         }
         return null;
-    }
+    }*/
 }

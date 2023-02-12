@@ -13,8 +13,8 @@ public class Order extends Command {
 
     @Override
     public void exec(Message message) {
-        String id = message.getUserId().toString();
-        new VKManager().sendButtonMessage(text(), message.getUserId(), Buttons.ACTIVITY.getObj());
+        String id = message.getId()/*getUserId()*/.toString();
+        new VKManager().sendButtonMessage(text(), message.getId()/*getUserId()*/, Buttons.ACTIVITY.getObj());
         if (!CommandManager.isExist(id)) CommandManager.addCommand(new Brief(id));
     }
 

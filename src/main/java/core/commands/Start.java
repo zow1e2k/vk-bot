@@ -13,16 +13,16 @@ public class Start extends Command{
 
     @Override
     public void exec(Message message) {
-        String id = message.getUserId().toString();
-        new VKManager().sendButtonMessage(text(), message.getUserId(), Buttons.START.getObj());
+        String id = message.getId()/*getUserId()*/.toString();
+        new VKManager().sendButtonMessage(text(), message.getId()/*getUserId()*/, Buttons.START.getObj());
         if (!CommandManager.isExist(id)) CommandManager.deleteCommandById(id);
     }
 
     private String text(){
-        String text = "Добрый день, Вас приветствует бот Cabrera Microsystems.\n" +
-                "Мы специализируемся на осуществлении широкого спектра услуг в области многопользовательских платформ серии GTA\n" +
-                "В частности: Rage Multiplayer, San-Andreas Multiplayer, Criminal Russia Multiplayer\n" +
-                "Наш бот поможет Вам: ознакомиться с соглашением и ценами, и, в конечном итоге сделать заказ.\n";
+        String text = "Добрый день, Вас приветствует LIVE BOT.\n" +
+                "Тут инфа о проекте\n" +
+                "Еще инфа о проекте\n" +
+                "Мало инфы о проекте не бывает!\n";
         return text;
     }
 

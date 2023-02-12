@@ -19,8 +19,8 @@ public class VKCore {
     public VKCore() throws ClientException, ApiException {
         TransportClient transportClient = HttpTransportClient.getInstance();
         vk = new VkApiClient(transportClient);
-        int groupId = 0;
-        String access_token = "your access token";
+        int groupId = 218062129;
+        String access_token = "vk1.a.RLPrhfLc2bj1k3aqUtmfSXNCZxTLl4m7i__OmtWwjUZTGBTsNo1Xwc32bUPZtu25FTCOccm3Aen1zxRnDMjxzONh9013LYmK_t1Q2c-d6t0YYCM_0mnbfS_VMVKAQj17W-FtW_Urn2VWW6bZKgdWqBcRcrPQ-4F53Espd2U46_yp0XgglmS74n5plk5e4sK8iGv__FmB607LUiuM-Q8xLA";
         actor = new GroupActor(groupId, access_token);
         ts = getVk().messages().getLongPollServer(actor).execute().getTs();
     }
@@ -30,6 +30,7 @@ public class VKCore {
     public VkApiClient getVk() {
         return vk;
     }
+
     public Message getMessage() throws ClientException, ApiException {
         MessagesGetLongPollHistoryQuery eventsQuery = getVk().messages()
                 .getLongPollHistory(actor)
@@ -39,8 +40,7 @@ public class VKCore {
         }
         List<Message> messages = eventsQuery
                 .execute()
-                .getMessages()
-                .getMessages();
+                .getMessages().getItems();
 
         if (!messages.isEmpty()){
             try {

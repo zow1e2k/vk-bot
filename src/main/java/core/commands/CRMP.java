@@ -13,8 +13,8 @@ public class CRMP extends Command {
 
     @Override
     public void exec(Message message) {
-        String id = message.getUserId().toString();
-        new VKManager().sendButtonMessage(text(), message.getUserId(), Buttons.TYPE.getObj());
+        String id = message.getId()/*getUserId()*/.toString();
+        new VKManager().sendButtonMessage(text(), message.getId()/*getUserId()*/, Buttons.TYPE.getObj());
         CommandManager.setCommandPlatform(id, "CRMP");
     }
 

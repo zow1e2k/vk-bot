@@ -28,11 +28,11 @@ public class Brief extends Command {
 
     @Override
     public void exec(Message message) {
-        new VKManager().sendMessageToAdm(this.admMsg + message.getUserId());
-        new VKManager().sendButtonMessage(this.btnMsg, message.getUserId(), Buttons.RETURN.getObj());
+        new VKManager().sendMessageToAdm(this.admMsg + message.getId()); //.getUserId());
+        new VKManager().sendButtonMessage(this.btnMsg, message.getId()/*getUserId()*/, Buttons.RETURN.getObj());
 
         if (this.platform.equals("Дизайн")) {
-            new VKManager().sendMessageToDesigner(this.admMsg + message.getUserId());
+            new VKManager().sendMessageToDesigner(this.admMsg + message.getId()/*getUserId()*/);
         }
 
         CommandManager.deleteCommand(this);
