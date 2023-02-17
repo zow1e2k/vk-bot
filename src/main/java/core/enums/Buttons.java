@@ -255,31 +255,15 @@ public enum Buttons {
             "        \"action\": {\n" +
             "          \"type\": \"text\",\n" +
             "          \"payload\": \"{\\\"button\\\": \\\"1\\\"}\",\n" +
-            "          \"label\": \"Прайс-лист\"\n" +
+            "          \"label\": \"Получить Platinum VIP\"\n" +
             "        },\n" +
-            "        \"color\": \"primary\"\n" +
-            "    }],\n" +
-            "    [{\n" +
-            "        \"action\": {\n" +
-            "          \"type\": \"text\",\n" +
-            "          \"payload\": \"{\\\"button\\\": \\\"2\\\"}\",\n" +
-            "          \"label\": \"Соглашение\"\n" +
-            "        },\n" +
-            "        \"color\": \"primary\"\n" +
-            "    }],\n" +
-            "    [{\n" +
-            "        \"action\": {\n" +
-            "          \"type\": \"text\",\n" +
-            "          \"payload\": \"{\\\"button\\\": \\\"3\\\"}\",\n" +
-            "          \"label\": \"Сделать заказ\"\n" +
-            "        },\n" +
-            "        \"color\": \"primary\"\n" +
+            "        \"color\": \"positive\"\n" +
             "    }],\n" +
             "    [{\n" +
             "        \"action\": {\n" +
             "          \"type\": \"text\",\n" +
             "          \"payload\": \"{\\\"button\\\": \\\"4\\\"}\",\n" +
-            "          \"label\": \"Помощь\"\n" +
+            "          \"label\": \"Акции\"\n" +
             "        },\n" +
             "        \"color\": \"primary\"\n" +
             "    }]\n" +

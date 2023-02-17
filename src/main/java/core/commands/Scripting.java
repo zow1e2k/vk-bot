@@ -12,8 +12,8 @@ public class Scripting extends Command {
     }
     @Override
     public void exec(Message message) {
-        String id = message.getId()/*getUserId()*/.toString();
-        new VKManager().sendButtonMessage(text(), message.getId()/*getUserId()*/, Buttons.PLATFORM.getObj());
+        String id = message.getPeerId()/*getUserId()*/.toString();
+        new VKManager().sendButtonMessage(text(), message.getPeerId()/*getUserId()*/, Buttons.PLATFORM.getObj());
         if (!CommandManager.isExist(id)) CommandManager.addCommand(new Brief(id));
     }
 

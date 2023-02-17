@@ -1,24 +1,24 @@
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Scripting.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Unknown.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\Main.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\MySQLHandler.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\vk\Messenger.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\vk\VKCore.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\CRMP.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Brief.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Order.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\Commander.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\vk\VKManager.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\License.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\CommandManager.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\CommandDeterminant.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\enums\Admins.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Design.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\Command.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Help.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\interfaces\ServiceCommand.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\enums\Buttons.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\ShowCommands.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\CommandHandler.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Map.java
-T:\LIVE RUSSIA\vk-bot\src\main\java\core\commands\Start.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\CRMP.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Scripting.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\ShowCommands.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\Commander.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Order.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\enums\Admins.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\MySQLHandler.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\License.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Design.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Brief.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\vk\VKCore.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\vk\VKManager.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Help.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\Command.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\enums\Buttons.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\Main.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\vk\Messenger.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\CommandHandler.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Start.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\CommandDeterminant.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\CommandManager.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Map.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\commands\Unknown.java
+Z:\Projects\LiveRussia\vk-bot\src\main\java\core\interfaces\ServiceCommand.java

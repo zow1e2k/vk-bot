@@ -13,8 +13,8 @@ public class Map extends Command {
 
     @Override
     public void exec(Message message) {
-        String id = message.getId()/*getUserId()*/.toString();
-        new VKManager().sendButtonMessage(text(), message.getId()/*getUserId()*/, Buttons.PLATFORM_MAP.getObj());
+        String id = message.getPeerId()/*getUserId()*/.toString();
+        new VKManager().sendButtonMessage(text(), message.getPeerId()/*getUserId()*/, Buttons.PLATFORM_MAP.getObj());
         if (!CommandManager.isExist(id)) CommandManager.addCommand(new Brief(id));
     }
 

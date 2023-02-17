@@ -6,6 +6,8 @@ import com.vk.api.sdk.objects.users.UserXtrCounters;
 import com.vk.api.sdk.queries.messages.MessagesSendQuery;
 import core.enums.Admins;
 
+import java.util.Random;
+
 public class VKManager {
     public static VKCore vkCore;
 
@@ -41,11 +43,13 @@ public class VKManager {
             return;
         }
         try {
+            int rand = new Random().nextInt();
             vkCore
                     .getVk()
                     .messages()
                     .send(vkCore.getActor())
                     .peerId(peerId)
+                    .randomId(rand)
                     .message(msg)
                     .unsafeParam("keyboard", keyboard)
                     .execute();

@@ -12,7 +12,7 @@ public class License extends Command {
 
     @Override
     public void exec(Message message) {
-        new VKManager().sendButtonMessage(text(), message.getId()/*getUserId()*/, Buttons.RETURN.getObj());
+        new VKManager().sendButtonMessage(text(), message.getPeerId()/*getUserId()*/, Buttons.RETURN.getObj());
     }
 
     private String text(){
