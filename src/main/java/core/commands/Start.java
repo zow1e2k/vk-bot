@@ -13,9 +13,12 @@ public class Start extends Command{
 
     @Override
     public void exec(Message message) {
-        String id = message.getPeerId()/*getUserId()*/.toString();
-        new VKManager().sendButtonMessage(text(), message.getPeerId()/*getUserId()*/, Buttons.START.getObj());
-        if (!CommandManager.isExist(id)) CommandManager.deleteCommandById(id);
+        String id = message.getPeerId().toString();
+        new VKManager().sendButtonMessage(text(), message.getPeerId(), Buttons.START.getObj());
+        if (!CommandManager.isExist(id)) {
+            CommandManager.deleteCommandById(id);
+        }
+        CommandManager.addCommand(new Binding(id));
     }
 
     private String text(){

@@ -4,6 +4,7 @@ import com.vk.api.sdk.objects.messages.Message;
 
 public abstract class Command {
     public final String name;
+    public String username;
     public String type, platform, text;
 
     public Command(String name){

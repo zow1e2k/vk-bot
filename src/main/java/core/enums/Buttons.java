@@ -1,40 +1,16 @@
 package core.enums;
 
 public enum Buttons {
-    TYPE("{\n" +
+    SERVER("{\n" +
             "  \"one_time\": true,\n" +
             "  \"buttons\": [\n" +
             "    [{\n" +
             "        \"action\": {\n" +
             "          \"type\": \"text\",\n" +
             "          \"payload\": \"{\\\"button\\\": \\\"1\\\"}\",\n" +
-            "          \"label\": \"Внедрение систем\"\n" +
+            "          \"label\": \"Москва\"\n" +
             "        },\n" +
             "        \"color\": \"primary\"\n" +
-            "    }],\n" +
-            "    [{\n" +
-            "        \"action\": {\n" +
-            "          \"type\": \"text\",\n" +
-            "          \"payload\": \"{\\\"button\\\": \\\"2\\\"}\",\n" +
-            "          \"label\": \"Исправление ошибок\"\n" +
-            "        },\n" +
-            "        \"color\": \"primary\"\n" +
-            "    }],\n" +
-            "    [{\n" +
-            "        \"action\": {\n" +
-            "          \"type\": \"text\",\n" +
-            "          \"payload\": \"{\\\"button\\\": \\\"3\\\"}\",\n" +
-            "          \"label\": \"Создание игрового мода\"\n" +
-            "        },\n" +
-            "        \"color\": \"primary\"\n" +
-            "    }],\n" +
-            "    [{\n" +
-            "        \"action\": {\n" +
-            "          \"type\": \"text\",\n" +
-            "          \"payload\": \"{\\\"button\\\": \\\"1\\\"}\",\n" +
-            "          \"label\": \"Назад\"\n" +
-            "        },\n" +
-            "        \"color\": \"positive\"\n" +
             "    }]\n" +
             "  ]\n" +
             "}"),

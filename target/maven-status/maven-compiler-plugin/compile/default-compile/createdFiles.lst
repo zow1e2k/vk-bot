@@ -1,4 +1,5 @@
 core\CommandDeterminant.class
+core\commands\Binding.class
 core\commands\Brief.class
 core\enums\Admins.class
 core\CommandManager.class
@@ -11,7 +12,6 @@ core\commands\Map.class
 core\commands\Scripting.class
 core\commands\Start.class
 core\commands\Help.class
-core\commands\CRMP.class
 core\interfaces\ServiceCommand.class
 MySQLHandler.class
 core\commands\ShowCommands.class

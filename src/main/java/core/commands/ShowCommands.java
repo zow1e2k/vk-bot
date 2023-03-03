@@ -13,7 +13,7 @@ public class ShowCommands extends Command {
 
     @Override
     public void exec(Message message) {
-        if (Admins.Admin.getId() == message.getPeerId()/*getUserId()*/ || Admins.Admin.getId() == message.getPeerId()/*getUserId()*/)
-            new VKManager().sendMessage(CommandManager.getCommands().toString(), message.getPeerId()/*getUserId()*/);
+        if (Admins.Admin.getId() == message.getPeerId() || Admins.Admin.getId() == message.getPeerId())
+            new VKManager().sendMessage(CommandManager.getCommands().toString(), message.getPeerId());
     }
 }

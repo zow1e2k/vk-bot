@@ -3,7 +3,6 @@ import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.objects.messages.Message;
 import vk.Messenger;
 import vk.VKCore;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -14,7 +13,7 @@ public class CommandHandler extends Thread {
         this.vkCore = vkCore;
     }
 
-    public void start() {
+    public void run() {
         try {
             while (true) {
                 Thread.sleep(300);

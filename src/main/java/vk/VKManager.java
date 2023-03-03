@@ -5,7 +5,6 @@ import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.objects.users.UserXtrCounters;
 import com.vk.api.sdk.queries.messages.MessagesSendQuery;
 import core.enums.Admins;
-
 import java.util.Random;
 
 public class VKManager {

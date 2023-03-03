@@ -10,6 +10,10 @@ public class CommandManager {
     static {
         commands.add(new Start("Начать"));
         commands.add(new Start("Start"));
+        commands.add(new Binding("Привязать"));
+        commands.add(new Binding("Получить Platinum VIP"));
+        commands.add(new Binding("VIP"));
+        commands.add(new Start("привязать"));
         commands.add(new Help("Помощь"));
     }
 
